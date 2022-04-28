@@ -98,7 +98,7 @@ owner: uchief
 repo: uchief.github.io
 clientID: Iv1.3b63b0f8d3493966
 clientSecret: deb1ddcdeb77539492afc114b37159ee1281deaa
-admin: uchief
+admin: ['uchief']
 
 # ------------ The following options are not recommended to be modified ------------------
 
