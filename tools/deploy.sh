@@ -77,7 +77,7 @@ setup_gh() {
     _no_pages_branch=true
     git checkout -b "$PAGES_BRANCH"
   else
-    git checkout -f "$PAGES_BRANCH"
+    git checkout "$PAGES_BRANCH"
   fi
 }
 
@@ -98,7 +98,6 @@ flush() {
 
   shopt -s dotglob nullglob
   mv "$_backup_dir"/* .
-  [[ -f ".nojekyll" ]] || echo "" >".nojekyll"
 }
 
 deploy() {
@@ -135,25 +134,25 @@ main() {
 while (($#)); do
   opt="$1"
   case $opt in
-  -c | --config)
-    _config="$2"
-    shift
-    shift
-    ;;
-  --dry-run)
-    # build & test, but not deploy
-    _opt_dry_run=true
-    shift
-    ;;
-  -h | --help)
-    help
-    exit 0
-    ;;
-  *)
-    # unknown option
-    help
-    exit 1
-    ;;
+    -c | --config)
+      _config="$2"
+      shift
+      shift
+      ;;
+    --dry-run)
+      # build & test, but not deploy
+      _opt_dry_run=true
+      shift
+      ;;
+    -h | --help)
+      help
+      exit 0
+      ;;
+    *)
+      # unknown option
+      help
+      exit 1
+      ;;
   esac
 done
 
