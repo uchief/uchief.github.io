@@ -95,10 +95,9 @@ paginate: 10
 gitalk:
 enable: true
 owner: uchief
-repo: uchief.github.io
-clientID: Iv1.3b63b0f8d3493966
-clientSecret: deb1ddcdeb77539492afc114b37159ee1281deaa
-admin: ['uchief']
+repo: blog-comments
+clientID: 5e27f68dbc8e16bda35e
+clientSecret: 10c8794ba3583d326f4bacba789158119a82c3c8
 
 # ------------ The following options are not recommended to be modified ------------------
 

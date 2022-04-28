@@ -10,8 +10,6 @@ tail_includes:
 ---
 
 {% include lang.html %}
-<link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.7.0/gitalk.min.css">
-<script src="//cdn.bootcss.com/gitalk/1.7.0/gitalk.min.js"></script>
 
 <h1 data-toc-skip>{{ page.title }}</h1>
 
@@ -148,11 +146,6 @@ tail_includes:
     </div>
 
     {% include post-sharing.html %}
-    {% if site.gitalk %}
-      <div class="comment">
-        {% include comments.html %}
-      </div>
-    {% endif %}
 
   </div><!-- .post-tail-bottom -->
 
