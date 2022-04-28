@@ -87,7 +87,7 @@ If you want to close the comment for a specific post, add the following to the *
 
 ```yaml
 ---
-comments: false
+comments: true
 ---
 ```
 

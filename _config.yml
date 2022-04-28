@@ -95,7 +95,7 @@ paginate: 10
 gitalk:
 enable: true
 owner: uchief
-repo: blog-comments
+repo: uchief.github.io
 clientID: 5e27f68dbc8e16bda35e
 clientSecret: 10c8794ba3583d326f4bacba789158119a82c3c8
 
@@ -134,7 +134,7 @@ defaults:
     scope:
       path: _drafts
     values:
-      comments: false
+      comments: true
   -
     scope:
       path: ''
