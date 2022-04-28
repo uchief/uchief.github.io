@@ -12,11 +12,11 @@
 
 var gitalk = new Gitalk({
     id: decodeURI(window.location.pathname),
-    clientID: '5e27f68dbc8e16bda35e',
-    clientSecret: '10c8794ba3583d326f4bacba789158119a82c3c8',
-    repo: 'blog-comments',
-    owner: 'uchief',
-    admin: ['uchief'], 
+    clientID: '{{ site.gitalk.clientID }}',
+    clientSecret: '{{ site.gitalk.clientSecret }}',
+    repo: '{{ site.gitalk.repo }}',
+    owner: '{{ site.gitalk.owner }}',
+    admin: ['{{ site.gitalk.owner }}'], 
 	labels: ['Gitalk'],
 })
 gitalk.render('gitalk-container')
