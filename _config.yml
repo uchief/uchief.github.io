@@ -18,9 +18,9 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chief                          # the main title
+title: Chief                       # the main title
 
-tagline: Chief's notes   # it will display as the sub-title
+tagline: Talk is cheap. Show me the code.   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   react, js, css,html,node
