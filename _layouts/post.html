@@ -165,7 +165,7 @@ tail_includes:
       repo: 'uchief.gihub.io',
       owner: 'uchief',
       admin: ['uchief'],
-      id: window.location.pathname,
+      id: decodeURI(window.location.pathname),
     });
     gitalk.render('gitalk-container');
 </script>
