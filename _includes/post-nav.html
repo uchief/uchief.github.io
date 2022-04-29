@@ -28,3 +28,22 @@
   {% endif %}
 
 </div>
+
+<!-- Gitalk 评论 start  -->
+{% if site.gitalk.enable %}
+<!-- Link Gitalk 的支持文件  -->
+
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: '5e27f68dbc8e16bda35e',
+      clientSecret: '10c8794ba3583d326f4bacba789158119a82c3c8',
+      repo: 'uchief.github.io',
+      owner: 'uchief',
+      admin: ['uchief'],
+      id: decodeURI(window.location.pathname),
+    });
+    gitalk.render('gitalk-container');
+</script>
+{% endif %}
+<!-- Gitalk end -->
